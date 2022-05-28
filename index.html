@@ -15,7 +15,7 @@
         <h1>CheckOut</h1>
     </header>
     <div class="container">
-        
+
         <section>
             <form action="#" method="get">
                 <h2>Contact Information</h2>
@@ -73,41 +73,72 @@
                     <p>See this information next time.</p>
                 </div>
                 <div class="btn">
-                    <button type="submit">Continue</button>
+                    <button class="btn-in" type="submit">Continue</button>
                 </div>
             </form>
         </section>
         <aside>
             <div class="product1">
-                <img src="./IMG/photo1.png" alt="Bag"></img>
+                <div>
+                <img src="./IMG/photo1.png" alt="Bag">
+            </div>
                 <div class="text1">
 
                     <h4>Vintage Backbag</h4>
-                    <p>$54.99<small style="text-decoration:line-through;">$94.99</small></p>
-
+                    <i>$</i><p class="price1">54.99</p><small style="text-decoration:line-through;">$94.99</small>
+                    <div class="quantity">
+                        <button class ="minus">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                        <p class="value1">1</p>
+                        <button class="plus">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
+                      <br>
+                      <div>
+                        <button class="remove1">remove</button>
+                    </div>
                 </div>
             </div>
             <div class="product2">
-                <img src="./IMG/photo2.png" alt="Shoes"></img>
+                <img src="./IMG/photo2.png" alt="Shoes">
                 <div class="text2">
 
                     <h4>Levi Shoes</h4>
-                    <p>$74.99<small style="text-decoration:line-through;">$124.99</small></p>
-
+                    <i>$</i><p class="price2">74.99</p><small style="text-decoration:line-through;">$124.99</small>
+                    <div class="quantity">
+                        <button class ="minus">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                        <p class="value2">1</p>
+                        <button class="plus">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
+                      <br>
+                      <div>
+                        <button class="remove2">remove</button>
+                    </div>
                 </div>
             </div>
             <div class="ship-total">
                 <div class="shipping">
                     <p>Shipping</p>
-                    <p>$19</p>
+                    <div>
+                    <i>$</i><span>19</span>
+                </div>
                 </div>
                 <div class="total">
                     <p>Total</p>
-                    <p>$148.98</p>
+                    <div>
+                    <i>$</i><p class="total1">148.99</p>
+                </div>
                 </div>
             </div>
         </aside>
     </div>
+    <script src="./script.js" defer></script>
 </body>
 
 </html>
